@@ -36,7 +36,7 @@ sfdx force:org:open -u mlimit-sf
 ```
 ## Deploy Heroku 
 - Go to the App Manager in the Scratch Org setup and take note of CONSUMER_KEY and CONSUMER_SECRET in the Connected App "MLimit". You need these details to deploy the Heroku application. 
-- You are welcome now to deploy the Heroku (mlimit-merlion)[https://github.com/MaurizioBella/mlimit-merlion]
+- You are welcome now to deploy the Heroku [mlimit-merlion](https://github.com/MaurizioBella/mlimit-merlion)
 - Change the password in the Named Credential "mlimitcore" with the same value of the SECRET_KEY in Heroku once deployed the application
 
 ### Extra
