@@ -1,4 +1,4 @@
-<img src="src/static/favicon.png" align="right" width=15% height=15%>
+<img src="assets/favicon.png" align="right" width=15% height=15%>
 
 # MLimit Time Series Analysis with Salesforce Limits
 
