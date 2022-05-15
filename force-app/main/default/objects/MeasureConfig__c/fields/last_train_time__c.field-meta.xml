@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>last_train_time__c</fullName>
+    <description>Merlion last mobile training time</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Merlion last mobile training time</inlineHelpText>
+    <label>last train time</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

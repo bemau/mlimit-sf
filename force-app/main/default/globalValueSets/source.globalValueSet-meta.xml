@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>restapi</fullName>
+        <default>true</default>
+        <label>restapi</label>
+    </customValue>
+    <customValue>
+        <fullName>soql_count</fullName>
+        <default>false</default>
+        <label>soql_count</label>
+    </customValue>
+    <masterLabel>source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>addyouremail@example.com</contactEmail>
+    <description>MLimit is an open-source project for time series analysis and anomaly detection using Prophet and Salesforce Governor Limits as time-dependent variables Topics Resources</description>
+    <iconUrl>https://i.ibb.co/9svTDhD/favicon.png</iconUrl>
+    <infoUrl>https://mauriziobella.github.io/mlimit-core/</infoUrl>
+    <label>Mlimit</label>
+    <logoUrl>https://i.ibb.co/9svTDhD/favicon.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://herokuapp.com/callback</callbackUrl>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <permissionSetName>Mlimit Admin</permissionSetName>
+</ConnectedApp>

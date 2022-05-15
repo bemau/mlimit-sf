@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Query_required_for_source_soql_count</fullName>
+    <active>true</active>
+    <description>The Query is required for source equal to soql_count</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL( source__c , &apos;soql_count&apos;),
+    ISBLANK( query__c )
+)</errorConditionFormula>
+    <errorDisplayField>query__c</errorDisplayField>
+    <errorMessage>The Query is required for source equal to soql_count</errorMessage>
+</ValidationRule>

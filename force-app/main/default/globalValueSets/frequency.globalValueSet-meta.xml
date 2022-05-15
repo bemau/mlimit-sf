@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>D</fullName>
+        <default>true</default>
+        <label>D</label>
+    </customValue>
+    <customValue>
+        <fullName>H</fullName>
+        <default>false</default>
+        <label>H</label>
+    </customValue>
+    <customValue>
+        <fullName>M</fullName>
+        <default>false</default>
+        <label>M</label>
+    </customValue>
+    <customValue>
+        <fullName>F</fullName>
+        <default>false</default>
+        <label>F</label>
+    </customValue>
+    <description>Specify the frequency of a period:
+D: Daily
+H: Hourly
+M: Monthly
+F: Fixed</description>
+    <masterLabel>frequency</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

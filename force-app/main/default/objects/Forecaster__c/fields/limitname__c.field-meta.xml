@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>limitname__c</fullName>
+    <externalId>false</externalId>
+    <label>Measure Config</label>
+    <referenceTo>MeasureConfig__c</referenceTo>
+    <relationshipLabel>Forecasters</relationshipLabel>
+    <relationshipName>Forecasters</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

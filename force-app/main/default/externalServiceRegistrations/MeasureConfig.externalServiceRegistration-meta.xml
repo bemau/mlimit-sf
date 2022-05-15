@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>enable or disable measure configs via mlimit-core integration</description>
+    <label>MeasureConfig</label>
+    <namedCredential>mlimitcore</namedCredential>
+    <operations>
+        <active>true</active>
+        <name>mlimitx5fconfigx5ftypex5fget</name>
+    </operations>
+    <operations>
+        <active>true</active>
+        <name>mlimitx5fconfigx5ftypex5fpost</name>
+    </operations>
+    <registrationProviderType>Custom</registrationProviderType>
+    <schema>{
+    &quot;swagger&quot;: &quot;2.0&quot;,
+    &quot;basePath&quot;: &quot;/api&quot;,
+    &quot;paths&quot;: {
+        &quot;/configs/&quot;: {
+            &quot;get&quot;: {
+                &quot;responses&quot;: {
+                    &quot;200&quot;: {
+                        &quot;description&quot;: &quot;Success&quot;,
+                        &quot;schema&quot;: {
+                            &quot;$ref&quot;: &quot;#/definitions/ApiResponseCode&quot;
+                        }
+                    }
+                },
+                &quot;summary&quot;: &quot;Retry the status of a specific Measure Configuration Type configured&quot;,
+                &quot;operationId&quot;: &quot;mlimit_config_type_get&quot;,
+                &quot;parameters&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Measure Configuration Type name&quot;,
+                        &quot;name&quot;: &quot;type&quot;,
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;in&quot;: &quot;query&quot;
+                    },
+                    {
+                        &quot;name&quot;: &quot;X-Fields&quot;,
+                        &quot;in&quot;: &quot;header&quot;,
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;format&quot;: &quot;mask&quot;,
+                        &quot;description&quot;: &quot;An optional fields mask&quot;
+                    }
+                ],
+                &quot;tags&quot;: [
+                    &quot;configs&quot;
+                ]
+            },
+            &quot;post&quot;: {
+                &quot;responses&quot;: {
+                    &quot;400&quot;: {
+                        &quot;description&quot;: &quot;Error Message&quot;,
+                        &quot;schema&quot;: {
+                            &quot;$ref&quot;: &quot;#/definitions/ApiResponseCode&quot;
+                        }
+                    },
+                    &quot;201&quot;: {
+                        &quot;description&quot;: &quot;Success&quot;,
+                        &quot;schema&quot;: {
+                            &quot;$ref&quot;: &quot;#/definitions/ApiResponseCode&quot;
+                        }
+                    }
+                },
+                &quot;summary&quot;: &quot;Enable or Disable a Measure Configuration Type&quot;,
+                &quot;operationId&quot;: &quot;mlimit_config_type_post&quot;,
+                &quot;parameters&quot;: [
+                    {
+                        &quot;name&quot;: &quot;payload&quot;,
+                        &quot;required&quot;: true,
+                        &quot;in&quot;: &quot;body&quot;,
+                        &quot;schema&quot;: {
+                            &quot;$ref&quot;: &quot;#/definitions/MeasureConfigType&quot;
+                        }
+                    },
+                    {
+                        &quot;name&quot;: &quot;X-Fields&quot;,
+                        &quot;in&quot;: &quot;header&quot;,
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;format&quot;: &quot;mask&quot;,
+                        &quot;description&quot;: &quot;An optional fields mask&quot;
+                    }
+                ],
+                &quot;tags&quot;: [
+                    &quot;configs&quot;
+                ]
+            }
+        }
+    },
+    &quot;info&quot;: {
+        &quot;title&quot;: &quot;MLimit Measure Configuration&quot;,
+        &quot;version&quot;: &quot;1.0&quot;,
+        &quot;description&quot;: &quot;Measure Configuration Type&quot;
+    },
+    &quot;produces&quot;: [
+        &quot;application/json&quot;
+    ],
+    &quot;consumes&quot;: [
+        &quot;application/json&quot;
+    ],
+    &quot;tags&quot;: [
+        {
+            &quot;name&quot;: &quot;configs&quot;,
+            &quot;description&quot;: &quot;Measure Config Types&quot;
+        }
+    ],
+    &quot;definitions&quot;: {
+        &quot;MeasureConfigType&quot;: {
+            &quot;properties&quot;: {
+                &quot;name&quot;: {
+                    &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;status&quot;: {
+                    &quot;type&quot;: &quot;boolean&quot;
+                }
+            },
+            &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;ApiResponseCode&quot;: {
+            &quot;properties&quot;: {
+                &quot;message&quot;: {
+                    &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;code&quot;: {
+                    &quot;type&quot;: &quot;integer&quot;
+                }
+            },
+            &quot;type&quot;: &quot;object&quot;
+        }
+    },
+    &quot;responses&quot;: {
+        &quot;ParseError&quot;: {
+            &quot;description&quot;: &quot;When a mask can&apos;t be parsed&quot;
+        },
+        &quot;MaskError&quot;: {
+            &quot;description&quot;: &quot;When any error occurs on mask&quot;
+        }
+    }
+}</schema>
+    <schemaType>OpenApi</schemaType>
+    <status>Complete</status>
+</ExternalServiceRegistration>

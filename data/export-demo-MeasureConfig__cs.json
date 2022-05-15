@@ -1,0 +1,22 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "MeasureConfig__c",
+                "referenceId": "MeasureConfig__cRef1"
+            },
+            "Name": "DailyBulkApiBatches",
+            "active__c": true,
+            "externalid__c": "647e13cf-26ee-425b-a745-b1cf9e324621",
+            "frequency__c": "H",
+            "max_value__c": 15000,
+            "query__c": null,
+            "source__c": "restapi",
+            "smape__c": 2.6658568940327756,
+            "rmse__c": 195.72596162778123,
+            "last_train_time__c": "2021-10-07T23:00:00.000+0000",
+            "Model_Name__c": "ForecasterEnsemble",
+            "Model_Path__c": "model_ensemble"
+        }
+    ]
+}

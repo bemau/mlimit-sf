@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RMSE__c</fullName>
+    <description>Root Mean Square Error (RMSE) is a standard way to measure the error of a model in predicting quantitative data</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Root Mean Square Error (RMSE) is a standard way to measure the error of a model in predicting quantitative data</inlineHelpText>
+    <label>RMSE</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

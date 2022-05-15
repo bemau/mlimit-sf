@@ -1,0 +1,26 @@
+[
+    {
+        "sobject": "MeasureConfig__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "export-demo-MeasureConfig__cs.json"
+        ]
+    },
+    {
+        "sobject": "Forecaster__c",
+        "saveRefs": false,
+        "resolveRefs": true,
+        "files": [
+            "export-demo-Forecaster__cs.json"
+        ]
+    },
+    {
+        "sobject": "Measure__c",
+        "saveRefs": false,
+        "resolveRefs": true,
+        "files": [
+            "export-demo-Measure__cs.json"
+        ]
+    }
+]

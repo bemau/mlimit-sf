@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>anomaly__c</columns>
+    <columns>yhat__c</columns>
+    <columns>multiplicative_terms_upper__c</columns>
+    <columns>multiplicative_terms_lower__c</columns>
+    <columns>trend_upper__c</columns>
+    <columns>max_limit__c</columns>
+    <columns>trend_lower__c</columns>
+    <columns>multiplicative_terms__c</columns>
+    <columns>trend__c</columns>
+    <columns>additive_terms_upper__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Records</label>
+</ListView>

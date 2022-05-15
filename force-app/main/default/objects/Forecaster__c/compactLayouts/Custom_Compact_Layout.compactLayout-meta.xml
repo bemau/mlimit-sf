@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>anomaly__c</fields>
+    <fields>yhat__c</fields>
+    <fields>multiplicative_terms_upper__c</fields>
+    <fields>multiplicative_terms_lower__c</fields>
+    <fields>trend_upper__c</fields>
+    <fields>max_limit__c</fields>
+    <fields>trend_lower__c</fields>
+    <fields>multiplicative_terms__c</fields>
+    <fields>trend__c</fields>
+    <label>Custom Compact Layout</label>
+</CompactLayout>

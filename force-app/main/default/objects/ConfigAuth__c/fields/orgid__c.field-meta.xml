@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>orgid__c</fullName>
+    <description>Organization Id 15 digit</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Organization Id 15 digit</inlineHelpText>
+    <label>orgid</label>
+    <length>15</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
