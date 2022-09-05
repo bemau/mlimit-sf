@@ -10,7 +10,8 @@ const appFiles = [
     './force-app/main/default/flows/Measure_Config.flow-meta.xml',
     './force-app/main/default/remoteSiteSettings/mlimitcore.remoteSite-meta.xml',
     './force-app/main/default/connectedApps/mlimit.connectedApp-meta.xml',
-    './force-app/main/default/namedCredentials/mlimitcore.namedCredential-meta.xml'
+    './force-app/main/default/namedCredentials/mlimitcore.namedCredential-meta.xml',
+    './force-app/main/default/labels/CustomLabels.labels-meta.xml'
 ];
 
 const userFiles = [
