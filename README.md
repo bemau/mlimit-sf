@@ -29,8 +29,9 @@ git clone https://github.com/MaurizioBella/mlimit-sf
 cd mlimit-sf
 sfdx force:org:create -f config/project-scratch-def.json -v <dev hub org alias> -a mlimit-sf --setdefaultusername # create new Scratch Org
 # Example Output: Successfully created scratch org: 00D54000000OCquEAG, username: test-tnxg3fqufngn@example.com
-node preRun.js --app <heroku app name>.herokuapp.com --user test-ttgfctaegrse@example.com # add the Heroku App Name you are going to create later and the username you just created
+node preRun.js --app <heroku app name>.herokuapp.com --user <scratch username> # e.g. test-ttgfctaegrse@example.com add the Heroku App Name you are going to create later and the username you just created
 sfdx force:source:push -u mlimit-sf # push changes to the Scratch Org
+sfdx force:user:password:generate --targetusername <scratch username> -v <dev hub org alias>
 sfdx force:user:permset:assign -n Mlimit_Admin -u mlimit-sf
 sfdx force:org:open -u mlimit-sf
 ```
