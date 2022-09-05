@@ -5,7 +5,7 @@
 MLimit is an open-source project for time series analysis and anomaly detection using [Merlion](https://github.com/salesforce/Merlion) a Python library for time series intelligence. This project aims to forecast the upward or downward trend of a Salesforce Organization governor [limits](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_limits.htm) usage as time-dependent variables, trying to predict future data based on historical data. For example, the likelihood of data storage growth or API usage during the next seven days. Based on the prediction, evaluate actions such as improving resource utilization or acquiring more data storage.
 
 This project is composed by multiple layers
-- [Mlimit-merlion](https://github.com/MaurizioBella/mlimit-merlion) Core engine for the time-series-analsys.
+- [mlimit-merlion](https://github.com/MaurizioBella/mlimit-merlion) Core engine for the time-series-analsys.
 - [mlimit-sf](https://github.com/MaurizioBella/mlimit-sf) Components needed to show the forecasted data in Salesforce acting a Presentation Layer.
 
 #### Overview
@@ -28,8 +28,9 @@ This project is composed by multiple layers
 git clone https://github.com/MaurizioBella/mlimit-sf
 cd mlimit-sf
 sfdx force:org:create -f config/project-scratch-def.json -v <dev hub org alias> -a mlimit-sf --setdefaultusername # create new Scratch Org
-# Example Output: Successfully created scratch org: 00D54000000OCquEAG, username: test-tnxg3fqufngn@example.com
-node preRun.js --app <heroku app name>.herokuapp.com --user <scratch username> # e.g. test-ttgfctaegrse@example.com add the Heroku App Name you are going to create later and the username you just created
+# Example Output: Successfully created scratch org: 00D54000000OCquEAG, username: test-ttgfctaegrse@example.com
+node preRun.js --app <heroku app name>.herokuapp.com --user <scratch username> # add the Heroku App Name you are going to create later and the username you just created
+# example: preRun.js --app inspiration8111.herokuapp.com --user test-ttgfctaegrse@example.com 
 sfdx force:source:push -u mlimit-sf # push changes to the Scratch Org
 sfdx force:user:password:generate --targetusername <scratch username> -v <dev hub org alias>
 sfdx force:user:permset:assign -n Mlimit_Admin -u mlimit-sf
